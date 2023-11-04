@@ -38,9 +38,11 @@ Here, the letter 'h' means it can hold 8 images. The letter is assigned to the n
 	'k': 11,
 	'l': 12
 
-Roadmap:
+## Roadmap:
 
 - Using next and previous button to navigate in between the images
 - Using dot like slide-controllers for jumping to exact images you're looking for.
+- Image captions
+- Overlay text on images
 
-
+This plugin is heavily inspired by obsidian-image-layouts plugin.
