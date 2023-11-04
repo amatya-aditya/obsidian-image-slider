@@ -4,6 +4,7 @@ You can do it for both local as well as cloud images too.
 
 For local images you can use it as follows:-
 
+```
 ```image-slider-h
 ![[Pasted image 20231103120023.png]]
 ![[Pasted image 20231103120114.png]]
@@ -14,14 +15,19 @@ For local images you can use it as follows:-
 ![[Pasted image 20231104163429.png]]
 ![[Pasted image 20231104163453.png]]
 ```
+```
+
 
 Similarly, For images from internet, you can use it as follow:
 
+```
 ```image-slider-h
 ![](https://images.unsplash.com/photo-1608734265656-f035d3e7bcbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80)
 ![](https://images.unsplash.com/photo-1508002366005-75a695ee2d17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1568&q=80)
 ![](https://images.unsplash.com/photo-1498757581981-8ddb3c0b9b07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80)
 ```
+```
+
 
 Here, the letter 'h' means it can hold 8 images. The letter is assigned to the number of images it support. For now, it is limited to 12 images. 
 
