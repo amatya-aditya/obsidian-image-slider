@@ -1,8 +1,85 @@
-/*
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+@keyframes mymove {
+	0% { left: 0%; }
+	4% { left: 0%; }
+	8% { left: -100%; }
+	12% { left: -100%; }
+	16% { left: -200%; }
+	20% { left: -200% ;}
+	24% { left: -300% ;}
+	28% { left: -300% ;}
+	32% { left: -400% ;}
+	36% { left: -400% ;}
+	40% { left: -500% ;}
+	44% { left: -500% ;}
+	48% { left: -600% ;}
+	52% { left: -600% ;}
+	56% { left: -700% ;}
+	60% { left: -700% ;}
+	64% { left: -800% ;}
+	68% { left: -800% ;}
+	72% { left: -900% ;}
+	76% { left: -900% ;}
+	80% { left: -1000% ;}
+	84% { left: -1000% ;}
+	88% { left: -1100% ;}
+	92% { left: -1100% ;}
+	96% { left: -1200% ;}
+	100% { left: -1200% ;}
 
-If your plugin does not need CSS, delete this file.
+} 
 
-*/
+
+.block-language-image-slider-h {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-layouts-grid {
+	display: flex;
+	height: 100%;
+}
+
+.image-layouts-image{
+  min-width: 100%;
+  position: relative;
+}
+
+.image-layouts-image img {
+	width: 100%;
+        display: inline-block;
+        float: left;
+        animation-name: mymove;
+        animation-duration: 50s;
+        -webkit-animation-iteration-count: infinite;
+        position: relative;
+  }
+
+  .slide-controls {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+.next-img-btn,
+.prev-img-btn {
+  cursor: pointer;
+  /* background: transparent !important; */
+  font-size: 12px;
+  border: none;
+  color: white;
+  opacity:0.8;
+}
+.next-img-btn:focus,
+.prev-img-btn:focus {
+  outline: none;
+}
+
