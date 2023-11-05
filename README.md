@@ -1,8 +1,8 @@
-This plugin helps you to make image slider in obsidian notes.
+This plugin helps you make an image slider in obsidian notes.
 
-You can do it for both local as well as cloud images too.
+You can do it for both local and cloud images too.
 
-# For local images you can use it as follows:-
+For local images, you can use it as follows:
 
 ```
 ```image-slider-h
@@ -15,11 +15,10 @@ You can do it for both local as well as cloud images too.
 ![[Pasted image 20231104163429.png]]
 ![[Pasted image 20231104163453.png]]
 ```
+
+For images from the internet, you can use them as follows:
+
 ```
-
-
-# For images from internet, you can use it as follow:
-
 ```image-slider-h
 ![](https://images.unsplash.com/photo-1608734265656-f035d3e7bcbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80)
 ![](https://images.unsplash.com/photo-1508002366005-75a695ee2d17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1568&q=80)
@@ -27,7 +26,7 @@ You can do it for both local as well as cloud images too.
 ```
 
 
-Here, the letter 'h' means it can hold 8 images. The letter is assigned to the number of images it support. For now, it is limited to 12 images. 
+Here, the letter 'h' means it can hold 8 images. The letter is assigned to the number of images it supports. For now, it is limited to 12 images. 
 
 	'a': 1,
 	'b': 2,
