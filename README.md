@@ -1,3 +1,4 @@
+# Obsidian Image Slider
 This plugin helps you make an image slider in obsidian notes.
 
 You can do it for both local and cloud images too.
