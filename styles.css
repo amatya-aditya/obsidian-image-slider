@@ -1,85 +1,131 @@
-
-@keyframes mymove {
-	0% { left: 0%; }
-	4% { left: 0%; }
-	8% { left: -100%; }
-	12% { left: -100%; }
-	16% { left: -200%; }
-	20% { left: -200% ;}
-	24% { left: -300% ;}
-	28% { left: -300% ;}
-	32% { left: -400% ;}
-	36% { left: -400% ;}
-	40% { left: -500% ;}
-	44% { left: -500% ;}
-	48% { left: -600% ;}
-	52% { left: -600% ;}
-	56% { left: -700% ;}
-	60% { left: -700% ;}
-	64% { left: -800% ;}
-	68% { left: -800% ;}
-	72% { left: -900% ;}
-	76% { left: -900% ;}
-	80% { left: -1000% ;}
-	84% { left: -1000% ;}
-	88% { left: -1100% ;}
-	92% { left: -1100% ;}
-	96% { left: -1200% ;}
-	100% { left: -1200% ;}
-
-} 
+/*############################## *//*############################## */
+/*############################## *//*############################## */
+/*############################## *//*############################## */
 
 
-.block-language-image-slider-h {
-  margin: 0 auto;
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
+.gallery_wrapper {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	/* box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3); */
 }
 
-.image-layouts-grid {
+.img-card {
+	margin: 0 30px;
+    padding: 10px 10px;
+}
+
+
+.gallery_wrapper .active {
+	scroll-snap-type: unset;
+}
+.gallery_wrapper ul {
+	list-style-type: none;
 	display: flex;
+	margin: 2px;
+	width: 100%;
 	height: 100%;
+	overflow-x: scroll;
+   /* prevent accidentally going back or triggering other swipe events */
+	overscroll-behavior: contain;
+   /* hide scroll bar */
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+   /* momentum scroll on iOS */
+	-webkit-overflow-scrolling: touch;
+   /* disbable vertical scroll for touch */
+	touch-action: pan-x;
+   /* scroll snapping */
+	scroll-snap-type: x mandatory;
 }
-
-.image-layouts-image{
-  min-width: 100%;
-  position: relative;
+.gallery_wrapper ul::-webkit-scrollbar {
+	display: none;
 }
-
-.image-layouts-image img {
+.gallery_wrapper ul li {
+	color: #212121;
+	font-size: 1.2rem;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+	text-align: center;
 	width: 100%;
-        display: inline-block;
-        float: left;
-        animation-name: mymove;
-        animation-duration: 50s;
-        -webkit-animation-iteration-count: infinite;
-        position: relative;
-  }
-
-  .slide-controls {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-	width: 100%;
+	height: 100%;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
+	flex-direction: column;
+   /* scroll snapping */
+	scroll-snap-align: center;
+	margin: auto 0;
+   /* hacky fix for padding at the end of the list */
+}
+.gallery_wrapper ul li.active {
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+.gallery_wrapper ul li:last-child {
+	position: relative;
+}
+.gallery_wrapper ul li:last-child::after {
+	position: absolute;
+	left: 100%;
+	height: 1px;
+	width: 20px;
+	display: block;
+	content: "";
+}
+.gallery_wrapper ul li img {
+	padding-bottom: 5px;
+	height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+}
+
+.slide-controls{
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
 .next-img-btn,
 .prev-img-btn {
-  cursor: pointer;
-  /* background: transparent !important; */
-  font-size: 12px;
-  border: none;
-  color: white;
-  opacity:0.8;
+cursor: pointer;
+/* background: transparent !important; */
+font-size: 16px;
+border: none;
+color: #c3c3c3;
+opacity:0.8;
 }
-.next-img-btn:focus,
-.prev-img-btn:focus {
-  outline: none;
+
+.markdown-preview-view img:not([width]), .markdown-rendered img:not([width]) {
+    max-width: none !important; 
+    outline: none;
 }
+
+.workspace-leaf-content img:not([width]), .workspace-leaf-content audio, .workspace-leaf-content video {
+    max-width: none !important;
+}
+
+
+
+.dots-span {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    justify-content: center;
+    padding: 4px;
+	padding-bottom: 8px !important;
+}
+
+  button.dots 
+	{
+		width: 2px;
+		height: 2px;
+		border: none;
+		
+		cursor: pointer;
+		transition: width 0.5s;
+	  }
+  
 

@@ -1,4 +1,5 @@
 import { Plugin } from "obsidian";
+import { text } from "stream/consumers";
 
 const regexWiki = /\[\[([^\]]+)\]\]/
 const regexParenthesis = /\((.*?)\)/
@@ -6,18 +7,26 @@ const regexWikiGlobal = /\[\[([^\]]*)\]\]/g
 const regexMdGlobal = /\[([^\]]*)\]\(([^\(]*)\)/g
 
 const imageNumber: Record<string, number> = {
-	'a': 1,
-	'b': 2,
-	'c': 3,
-	'd': 4,
-	'e': 5,
-	'f': 6,
-	'g': 7,
-	'h': 8,
-	'i': 9,
-	'j': 10,
-	'k': 11,
-	'l': 12
+	'1': 1,
+	'2': 2,
+	'3': 3,
+	'4': 4,
+	'5': 5,
+	'6': 6,
+	'7': 7,
+	'8': 8,
+	'9': 9,
+	'10': 10,
+	'11': 11,
+	'12': 12,
+	'13': 13,
+	'14': 14,
+	'15': 15,
+	'16': 16,
+	'17': 17,
+	'18': 18,
+	'19': 19,
+	'20': 20
 }
 
 const addImageFromLink = (link: string, sourcePath: string, parent: HTMLElement, plugin: Plugin) => {
@@ -57,45 +66,44 @@ const renderLayout = (
 		images = images.slice(0, imageNumberCount);
 	}
 
-	const div = parent.createEl("div", { cls: `image-layouts-grid image-layouts-layout-${slides}` });
-
-	images.forEach((image, idx) => {
-		const imgdiv = div.createEl("div", { cls: `image-layouts-image` });
-		if (image.type === 'local') {
-			addImageFromLink(image.link, sourcePath, imgdiv, plugin);
-		} else if (image.type === 'external') {
-			console.log(image.link);
-			addExternalImage(image.link, imgdiv);
-		} else if (image.type === 'placeholder') {
-			addPlaceHolder('640x480', imgdiv);
-		}
-	});
+	const img_div = parent.createEl("div", { cls: `gallery_wrapper slider-container` });
+	const ul_img = img_div.createEl("ul", { cls: `inner-slider` });
 
 
-	// create next and previous slide button
+		images.forEach((image, idx) => {
 
-	function nextSlide(){
+			const li_img = ul_img.createEl("li", { cls: `img-card` });
+
+			if (image.type === 'local') {
+				addImageFromLink(image.link, sourcePath, li_img, plugin);
+			} else if (image.type === 'external') {
+				console.log(image.link);
+				addExternalImage(image.link, li_img);
+			} else if (image.type === 'placeholder') {
+				addPlaceHolder('640x480', li_img);
+			}
+
+			const dot_span = li_img.createEl("div", { cls: `dots-span` });
+
+			images.forEach((image, idx) => {
+
+				const dot = dot_span.createEl("button", { cls: `dots` });
 		
-	}
+				
+			});
+			
+		});
 
-	function prevSlide(){
-		
+	
 
-	}
-
-	// create next and previous button html element
+		// create next and previous button html element
 	const buttonDiv = parent.createEl("div", {cls: "slide-controls"});
 	let prevButtonEl = buttonDiv.createEl("button", { text: "Prev", cls: "prev-img-btn" });
 	let nextButtonEl = buttonDiv.createEl("button", { text: "Next", cls: "next-img-btn" });
 
+	
+	
 
-	nextButtonEl.addEventListener("click", () => {
-		nextSlide();
-	});
-
-	prevButtonEl.addEventListener("click", () => {
-		prevSlide();
-	});
 
 }
 
