@@ -6,7 +6,7 @@ You can do it for both local and cloud images too.
 For local images, you can use it as follows:
 
 ```
-```image-slider-h
+```image-slider-8
 ![[Pasted image 20231103120023.png]]
 ![[Pasted image 20231103120114.png]]
 ![[Pasted image 20231103120044.png]]
@@ -20,27 +20,38 @@ For local images, you can use it as follows:
 For images from the internet, you can use them as follows:
 
 ```
-```image-slider-h
-![](https://images.unsplash.com/photo-1608734265656-f035d3e7bcbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80)
-![](https://images.unsplash.com/photo-1508002366005-75a695ee2d17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1568&q=80)
-![](https://images.unsplash.com/photo-1498757581981-8ddb3c0b9b07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80)
+```image-slider-5
+![](https://picsum.photos/id/1/200/300)
+![](https://picsum.photos/id/2/200/300)
+![](https://picsum.photos/id/3/200/300)
+![](https://picsum.photos/id/4/200/300)
+![](https://picsum.photos/id/5/200/300)
+
 ```
 
 
-Here, the letter 'h' means it can hold 8 images. The letter is assigned to the number of images it supports. For now, it is limited to 12 images. 
+The number 'h5' means it can show 5 images. You can put 20 images in each code-block. 
 
-	'a': 1,
-	'b': 2,
-	'c': 3,
-	'd': 4,
-	'e': 5,
-	'f': 6,
-	'g': 7,
-	'h': 8,
-	'i': 9,
-	'j': 10,
-	'k': 11,
-	'l': 12
+	'1': 1,
+	'2': 2,
+	'3': 3,
+	'4': 4,
+	'5': 5,
+	'6': 6,
+	'7': 7,
+	'8': 8,
+	'9': 9,
+	'10': 10,
+	'11': 11,
+	'12': 12,
+	'13': 13,
+	'14': 14,
+	'15': 15,
+	'16': 16,
+	'17': 17,
+	'18': 18,
+	'19': 19,
+	'20': 20
 
 ## Roadmap:
 
