@@ -82,16 +82,6 @@ const renderLayout = (
 			} else if (image.type === 'placeholder') {
 				addPlaceHolder('640x480', li_img);
 			}
-
-			const dot_span = li_img.createEl("div", { cls: `dots-span` });
-
-			images.forEach((image, idx) => {
-
-				const dot = dot_span.createEl("button", { cls: `dots` });
-		
-				
-			});
-			
 		});
 
 	
@@ -102,7 +92,10 @@ const renderLayout = (
 	let nextButtonEl = buttonDiv.createEl("button", { text: "Next", cls: "next-img-btn" });
 
 	
-	
+	const dot_span = img_div.createEl("div", { cls: `dots-span` });
+		images.forEach((image, idx) => {
+			const dot = dot_span.createEl("button", { cls: `dots` });
+		});
 
 
 }
