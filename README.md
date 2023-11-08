@@ -17,7 +17,7 @@ For local images, you can use it as follows:
 ![[Pasted image 20231104163453.png]]
 ```
 
-For images from the internet, you can use them as follows:
+For images from the internet, you can use it as follows:
 
 ```
 ```image-slider-5
@@ -30,7 +30,7 @@ For images from the internet, you can use them as follows:
 ```
 
 
-The number 'h5' means it can show 5 images. You can put 20 images in each code-block. 
+The number '5' means it can show 5 images. You can put 20 images in each code-block. 
 
 	'1': 1,
 	'2': 2,
