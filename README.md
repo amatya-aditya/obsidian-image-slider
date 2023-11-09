@@ -2,7 +2,7 @@
 This plugin helps you make an image slider in obsidian notes. Currently, the slides can only be swiped using touchpad of the device.
 
 
-#Usuage
+# Usuage
 
 It can be used for both local as well as for cloud images. For local images, you can use it as follows:
 
