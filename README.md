@@ -7,7 +7,7 @@ https://github.com/amatya-aditya/obsidian-image-slider/assets/63241408/d7860c25-
 1. Using BRAT Plugin [Find more about BRAT Plugin]([url](https://tfthacker.com/Obsidian+Plugins+by+TfTHacker/BRAT+-+Beta+Reviewer's+Auto-update+Tool/Quick+guide+for+using+BRAT))
 	1. Install BRAT from the Community Plugins in Obsidian
 	2. Get the link to the GitHub repository you want to test. The plugin developer can provide you with this link.
-		`It will look something like: GitMurf/my-plugin or https://github.com/GitMurf/my-plugin`
+		`It will look something like: (https://github.com/amatya-aditya/obsidian-image-slider/releases)`
 	3. Open the command palette and run the command BRAT: Add a beta plugin for testing (If you want the plugin version to be frozen, use the command BRAT: Add a beta plugin with frozen version based on a release tag.)
 	4. Using the link from step 2, copy that into the modal that opens up
 	5. Click on Add Plugin -- wait a few seconds and BRAT will tell you what is going on
@@ -17,7 +17,7 @@ https://github.com/amatya-aditya/obsidian-image-slider/assets/63241408/d7860c25-
 
 2. Manual process
 
-	1. Navigate to the releases tab [https://github.com/juliusgb/obsidian-tldraw-plugin/releases](https://github.com/amatya-aditya/obsidian-image-slider/releases)
+	1. Navigate to the releases tab [Obsidian Image Slider](https://github.com/amatya-aditya/obsidian-image-slider/releases)
 	2. Download the main.js, mainfest.ts and styles.css of the latest releases.
 	3. Navigate to the directory of obsidian plugin inside your vault. It should look like this: .obsidian/plugins/plugins/
 	4. Create a new folder and rename it as obsidian-image-slider and move those three files into that folder.
