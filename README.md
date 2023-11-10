@@ -1,11 +1,27 @@
 # Obsidian Image Slider
 This plugin helps you make an image slider in obsidian notes. Currently, the slides can only be swiped using touchpad of the device.
 
-
-
 https://github.com/amatya-aditya/obsidian-image-slider/assets/63241408/d7860c25-c6aa-4037-9120-ad9ddc5cea40
+ 
+## Installation
+1. Using BRAT Plugin [Find more about BRAT Plugin]([url](https://tfthacker.com/Obsidian+Plugins+by+TfTHacker/BRAT+-+Beta+Reviewer's+Auto-update+Tool/Quick+guide+for+using+BRAT))
+	1. Install BRAT from the Community Plugins in Obsidian
+	2. Get the link to the GitHub repository you want to test. The plugin developer can provide you with this link.
+		`It will look something like: GitMurf/my-plugin or https://github.com/GitMurf/my-plugin`
+	3. Open the command palette and run the command BRAT: Add a beta plugin for testing (If you want the plugin version to be frozen, use the command BRAT: Add a beta plugin with frozen version based on a release tag.)
+	4. Using the link from step 2, copy that into the modal that opens up
+	5. Click on Add Plugin -- wait a few seconds and BRAT will tell you what is going on
+	6. After BRAT confirms the installation, in Settings go to the Community plugins tab.
+	7. Refresh the list of plugins
+	8. Find the beta plugin you just installed and Enable it.
 
+2. Manual process
 
+	1. Navigate to the releases tab [https://github.com/juliusgb/obsidian-tldraw-plugin/releases](https://github.com/amatya-aditya/obsidian-image-slider/releases)
+	2. Download the main.js, mainfest.ts and styles.css of the latest releases.
+	3. Navigate to the directory of obsidian plugin inside your vault. It should look like this: .obsidian/plugins/plugins/
+	4. Create a new folder and rename it as obsidian-image-slider and move those three files into that folder.
+	5. Refresh the list of plugins, find the Image slider in that list, and finally enable it.
 
 # Usuage
 
@@ -35,7 +51,6 @@ For images from the internet, you can use it as follows:
 
 ```
 
-
 The number '5' means it can show 5 images. You can put 20 images in each code-block. 
 
 	'1': 1,
@@ -58,7 +73,6 @@ The number '5' means it can show 5 images. You can put 20 images in each code-bl
 	'18': 18,
 	'19': 19,
 	'20': 20
-
 ## Roadmap:
 
 - Using next and previous button to navigate in between the images
