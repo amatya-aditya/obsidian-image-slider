@@ -19,7 +19,7 @@ https://github.com/amatya-aditya/obsidian-image-slider/assets/63241408/d7860c25-
 
 	1. Navigate to the releases tab [Obsidian Image Slider](https://github.com/amatya-aditya/obsidian-image-slider/releases)
 	2. Download the main.js, mainfest.ts and styles.css of the latest releases.
-	3. Navigate to the directory of obsidian plugin inside your vault. It should look like this: .obsidian/plugins/plugins/
+	3. Navigate to the directory of obsidian plugin inside your vault. It should look like this: .obsidian/plugins
 	4. Create a new folder and rename it as obsidian-image-slider and move those three files into that folder.
 	5. Refresh the list of plugins, find the Image slider in that list, and finally enable it.
 
